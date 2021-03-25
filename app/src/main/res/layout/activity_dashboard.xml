@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ScrollView
+        android:id="@+id/sv_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="IF CAFE "
+                android:textColor="#A31558"
+                android:textSize="20sp"
+                app:fontFamily="@font/bangers" />
+            <!-- warung makan 1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/warung"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gambar" />
+
+                <TextView
+                    android:id="@+id/textwarung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/warung"
+                    android:fontFamily="@font/bangers"
+                    android:text="Warung Makan Sederhana "
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textmakanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textwarung"
+                    android:layout_toRightOf="@id/warung"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/name_1"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+
+            </RelativeLayout>
+            <!-- warung makan 2-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/warung1"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gambar2" />
+
+                <TextView
+                    android:id="@+id/textwarung1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/warung1"
+                    android:fontFamily="@font/bangers"
+                    android:text="Warung ARAB  "
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textmakanan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textwarung1"
+                    android:layout_toRightOf="@id/warung1"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/name_2"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+
+            </RelativeLayout>
+            <!-- warung makan 3-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/bg"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/warung3"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chanachaat" />
+
+                <TextView
+                    android:id="@+id/textwarung3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/warung3"
+                    android:fontFamily="@font/bangers"
+                    android:text="Warung Pakistan"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textmakanan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textwarung3"
+                    android:layout_toRightOf="@id/warung3"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/name_3"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
